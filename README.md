@@ -13,8 +13,8 @@
 
 ## 依赖
 
-基于LD_PRELOAD的依赖个人开发的OL库：[https://github.com/1613661434/OL](https://github.com/1613661434/OL)
-基于iptables的依赖tinyxml2库
+* 基于LD_PRELOAD的依赖个人开发的OL库：[https://github.com/1613661434/OL](https://github.com/1613661434/OL)
+* 基于iptables的依赖tinyxml2库
 
 ## 注意事项
 
