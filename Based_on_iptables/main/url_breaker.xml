@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<URLBreakerConfig>
+    <!-- 全局配置 -->
+    <Global>
+        <LogPath>/home/ol/URL_Breaker/main/url_breaker.log</LogPath>       <!-- 日志路径 -->
+        <IptablesChain>URL_BREAKER</IptablesChain>                         <!-- 自定义iptables链名 -->
+        <PersistRule>true</PersistRule>                                    <!-- 规则持久化 -->
+        <CleanKernelLog>false</CleanKernelLog>                             <!-- Ctrl+C是否清理内核日志 -->
+    </Global>
+
+    <!-- 拦截时间段（支持跨天时段） -->
+    <TimeRules>
+        <TimeRule>
+            <Start>18:00</Start>
+            <End>21:00</End>
+        </TimeRule>
+        <TimeRule>
+            <Start>00:00</Start>
+            <End>11:20</End>
+        </TimeRule>
+    </TimeRules>
+
+    <!-- 黑名单 -->
+    <BlackList>
+        <Item>1.116.160.84:0</Item>
+        <Item>192.168.1.100:8080</Item>
+        <Item>223.5.5.5:53</Item>
+    </BlackList>
+</URLBreakerConfig>

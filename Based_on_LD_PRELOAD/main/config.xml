@@ -1,0 +1,15 @@
+<URLBreakerConfig>
+    <!-- 拦截时间段 -->
+    <StartInterceptTime>00:00</StartInterceptTime>
+    <EndInterceptTime>24:00</EndInterceptTime>
+
+    <!-- 进程白名单 -->
+    <WhitelistProc>/bin/bash</WhitelistProc>
+    <WhitelistProc>/usr/bin/curl</WhitelistProc>
+    <WhitelistProc>/home/mysql/Projects/URL_Breaker/test/test_conn_brea_whi</WhitelistProc>
+
+    <!-- 黑名单 -->
+    <BlacklistEntry>1.1.1.1:80</BlacklistEntry>    <!-- Cloudflare DNS，测试IP拦截 -->
+    <BlacklistEntry>www.baidu.com:80</BlacklistEntry> <!-- 百度，测试域名解析拦截 -->
+    <BlacklistEntry>2.2.2.2:*</BlacklistEntry>      <!-- 通配所有端口 -->
+</URLBreakerConfig>

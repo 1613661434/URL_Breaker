@@ -1,0 +1,2 @@
+unset LD_PRELOAD
+echo "LD_PRELOAD=$LD_PRELOAD"
